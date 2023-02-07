@@ -11,11 +11,18 @@ body {
     padding: 0;
     font-family: "Quicksand", sans-serif;
     overflow: hidden;
+    background: rgb(91, 91, 91);
 }
 
 .vehiclerentcontainer {
     /* display: none; */
-    background: linear-gradient(341deg, #000898 0%, #2F2FC5 50%, #3B4D67 100%);
+    /* background: linear-gradient(341deg, #000898 0%, #2F2FC5 50%, #3B4D67 100%); */
+    background: rgb(40, 40, 40);
+    /* background-image: url(../media/backgroundoverlay.png);
+    background-size: 600px 400px;
+    background-repeat: no-repeat;
+    background-position: right 10px bottom 0px; */
+    /* transform: rotate(90deg); */
     width: 800px;
     height: 800px;
     position: absolute;
@@ -26,10 +33,36 @@ body {
     transform: translate(-50%, -50%);
 }
 
+
+/* .vehiclerentcontainer:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 480px;
+    left: -220px;
+    z-index: 100000;
+    background: url(../media/backgroundoverlay.png) 0 0 no-repeat;
+    background-size: 600px 400px;
+    transform: rotate(10deg);
+} */
+
+.vehiclerentcontainerimg {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 520px;
+    left: 60px;
+    z-index: 100000;
+    background: url(../media/backgroundoverlay.png) no-repeat;
+    background-size: 600px 400px;
+}
+
 .header {
-    background: linear-gradient(0deg, #00000000 0%, #000898 100%);
+    background: linear-gradient(0deg, #00000000 0%, #000000 100%);
     width: 800px;
-    height: 70px;
+    height: 50px;
     position: absolute;
     top: 0px;
     left: 0px;
@@ -50,7 +83,7 @@ body {
 .welcometext {
     position: absolute;
     color: white;
-    top: 200px;
+    top: 150px;
     font-size: 30px;
     margin: auto;
     width: 800px;
